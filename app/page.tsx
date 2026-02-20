@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -13,7 +14,13 @@ export default function Page() {
             starter kit to quickly set up a new project with Microsoft Fabric.
           </p>
         </div>
-        <Button size="lg">Get Started</Button>
+        <Button
+          size="lg"
+          render={<Link href="/drizzle" />}
+          nativeButton={false}
+        >
+          Get Started
+        </Button>
       </div>
     </main>
   );
